@@ -1,0 +1,28 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: url('img/background.png') no-repeat;
+
+}
+
+
+.images {
+    background: yellow;
+    flex: 0 0 80%;
+    min-height: 65vh;
+    background: url('img/bc\ -01.png')center/cover no-repeat;
+}
+
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: black;
+    border: 3px solid green;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 20%;
+
+}
