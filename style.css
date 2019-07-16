@@ -12,7 +12,7 @@ body {
     background: yellow;
     flex: 0 0 80%;
     min-height: 65vh;
-    background: url('img/bc\ -01.png')center/cover no-repeat;
+    background: url('img/bc-0.png')center/cover no-repeat;
     border-radius: 15px;
     box-shadow: 5px 10px black;
     position: relative;
