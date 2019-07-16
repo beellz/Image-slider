@@ -13,6 +13,10 @@ body {
     flex: 0 0 80%;
     min-height: 65vh;
     background: url('img/bc\ -01.png')center/cover no-repeat;
+    border-radius: 15px;
+    box-shadow: 5px 10px black;
+    position: relative;
+
 }
 
 
@@ -24,5 +28,32 @@ body {
     font-size: 1.5rem;
     padding: 0.5rem;
     border-radius: 20%;
+    box-shadow: 2px 5px black;
+    outline: none;
 
+}
+
+.prevBtn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.nextBtn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.btn:active {
+    background: grey;
+    box-shadow: 1px 1px grey;
+
+}
+
+.btn:hover{
+    background: green;
+    color:  white;
 }
