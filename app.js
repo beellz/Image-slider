@@ -19,7 +19,7 @@ function nextSlide() {
 
 
     counter++;
-    container.style.backgroundImage = `url(img/bc-${counter}.png)`
+    container.style.backgroundImage = `url(img/bc-${counter}.jpg)`
 
 }
 
@@ -30,6 +30,6 @@ function prevSlide() {
         counter = 7;
     }
     counter--;
-    container.style.backgroundImage = `url(img/bc-${counter}.png)`
+    container.style.backgroundImage = `url(img/bc-${counter}.jpg)`
 
 }
