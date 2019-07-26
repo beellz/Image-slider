@@ -1,13 +1,15 @@
 const nextBtn = document.querySelector('.nextBtn');
 const prevBtn = document.querySelector('.prevBtn');
 const container = document.querySelector('.images');
-
+const as = document.querySelector('.auto-scroll');
+// const as = document.getElementById("scrolbtn");
 
 let counter = 0 ;
 
 
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
+as.addEventListener('click', scrollMe);
 
 
 function nextSlide() {
@@ -21,7 +23,7 @@ function nextSlide() {
     counter++;
     container.style.backgroundImage = `url(img/bc-${counter}.jpg)`
 
-}
+};
 
 function prevSlide() {
     container.animate([{opacity:'0.1'},{opacity:'1.0'}],{duration:1000,fill:'forwards'});
@@ -32,4 +34,18 @@ function prevSlide() {
     counter--;
     container.style.backgroundImage = `url(img/bc-${counter}.jpg)`
 
+};
+
+
+function pageLoad() {
+    var startButton = document.getElementById("scrolbtn");
+
+    startButton.onclick = alertMe;
 }
+
+function scrollMe() {
+  setInterval(function(){
+    nextSlide();
+  },3500);
+}
+
